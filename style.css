@@ -38,8 +38,8 @@ header {
 .logo {
   width: 100px;
   height: 95px;
-  margin-left: 100px;
-  margin-top: 7px;
+  margin-left: 0px;
+  margin-top: 30px;
 }
 
 .burger-menu {
@@ -48,14 +48,13 @@ header {
 
 .navbar {
   display: flex;
-  width: 100%;
+  width: 80%;
   justify-content: space-between;
   background-color: #fefdf9;
 }
 
 .links {
   display: flex;
-  margin-right: 120px;
 }
 
 .links li {
@@ -86,10 +85,9 @@ header {
 
 .hero {
   display: grid;
-  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(
-      0,
-      1fr
-    ) minmax(0, 1fr);
+  grid-template-rows:
+    minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)
+    minmax(0, 1fr);
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   width: 85%;
@@ -103,11 +101,14 @@ header {
 .hero-cover {
   grid-column: span 4;
   grid-row: span 2;
-  background-image: url("https://images.unsplash.com/photo-1634129366530-61d3e56a84fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.hero-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 aside {
@@ -361,10 +362,10 @@ aside h2 {
     width: 88vw;
     margin-bottom: 30px;
   }
-  
+
   .burger-menu {
     display: block;
-    margin-right: 70px;
+    margin-right: 18px;
     margin-top: 33px;
   }
 
@@ -381,8 +382,6 @@ aside h2 {
   .burger-menu i:active {
     transform: scale(0.97);
   }
-
-  
 
   .navbar {
     margin-top: 8px;
