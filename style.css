@@ -202,10 +202,12 @@ aside h2 {
   height: 20%;
   font-size: 16px;
   letter-spacing: 3px;
+  transition: all 0.4s ease;
 }
 
 .cta-btn:hover {
-  background-color: #d65648;
+  border-radius: 25px;
+  background-color: #0c0720;
 }
 
 .cta-btn:active {
